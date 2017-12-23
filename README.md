@@ -91,4 +91,8 @@ examples are primarily intended as experiments in lower-level embedded programmi
 
 ---
 
+See also accompanying blog post: *[JTAG/SWD debugging via Black Magic Probe on an STM32 blue pill and blinking a LED using STM32CubeMX, libopencm3, and bare metal C](https://satoshinm.github.io/blog/171223_jtagswdpillblink_jtagswd_debugging_via_black_magic_probe_on_an_stm32_blue_pill_and_blinking_a_led_using_stm32cubemx_libopencm3_and_bare_metal_c.html)*
+
+--
+
 **[Comments?](https://www.reddit.com/r/stm32f4/comments/7lnosf/pill_blink_examples_of_blinking_the_stm32f103c8/)**
