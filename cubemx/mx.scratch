@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-<ProjectName>blink</ProjectName>
+<ProjectName>pill_blink</ProjectName>
 <CMSIS>Drivers/CMSIS</CMSIS>
 <HAL_Driver>/Users/admin/STM32Cube/Repository//STM32Cube_FW_F1_V1.6.0/Drivers/CMSIS</HAL_Driver>
 
@@ -22,7 +22,7 @@
 
 <configs>
   <config>
-    <name>blink</name>				
+    <name>pill_blink</name>				
     <device>STM32F103C8Tx</device>		 
     <heapSize>0x200</heapSize>
     <stackSize>0x400</stackSize>

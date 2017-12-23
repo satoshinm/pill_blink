@@ -4,7 +4,7 @@ To build this project:
 
 1. Ensure you have the ARM GCC compiler installed (e.g. install [Homebrew](https://brew.sh), run `brew cask install gcc-arm-embedded`)
 2. `make`
-3. The binary should now be available for flashing in build/blink.bin
+3. The binary should now be available for flashing in `build/pill_blink.bin`
 
 To recreate this project from scratch:
 
