@@ -98,6 +98,10 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    GPIOC->BRR |= 1<<13;
+    for (int i = 0; i < 1000000; ++i) asm("nop");
+    GPIOC->BSRR |= 1<<13;
+    for (int i = 0; i <  500000; ++i) asm("nop");
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
