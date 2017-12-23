@@ -17,3 +17,4 @@ pill_blink $ find . -name '*.bin' -exec ls -l {} \;
 -rwxr-xr-x  1 admin  staff   440 Dec 23 00:10 ./bare-metal/pill_blink.bin
 ```
 
+![Blinking example](https://user-images.githubusercontent.com/26856618/34317330-2e0485f2-e761-11e7-9bad-5e27cae52735.png)
