@@ -88,3 +88,7 @@ Program received signal SIGINT, Interrupt.
 [Arduino](https://www.arduino.cc)-compatible STM32 platform where `digitalWrite()` can toggle the LED, but these
 examples are primarily intended as experiments in lower-level embedded programming without Arduino, for background see also:
 *[STM32 Blue Pill ARM development board first look: from Arduino to bare metal programming](https://satoshinm.github.io/blog/171212_stm32_blue_pill_arm_development_board_first_look_bare_metal_programming.html)*.
+
+---
+
+**[Comments?](https://www.reddit.com/r/stm32f4/comments/7lnosf/pill_blink_examples_of_blinking_the_stm32f103c8/)**
