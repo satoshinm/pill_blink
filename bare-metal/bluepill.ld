@@ -15,5 +15,3 @@ SECTIONS
         . = ALIGN(4);
     } >rom
 }
-
-PROVIDE(_stack = ORIGIN(ram) + LENGTH(ram));

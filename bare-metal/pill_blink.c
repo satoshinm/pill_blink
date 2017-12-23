@@ -13,11 +13,6 @@ void __attribute__ ((weak, naked)) reset_handler(void) {
     }
 }
 
-
-void blocking_handler(void) { while (1); }
-void null_handler(void) {}
-extern unsigned _stack;
-
 __attribute__ ((section(".vectors")))
 struct {
     unsigned int *initial_sp_value;
@@ -35,82 +30,5 @@ struct {
     void (*systick)(void);
     void (*irq[68])(void);
 } vector_table = {
-    .initial_sp_value = &_stack,
     .reset = reset_handler,
-    .nmi = null_handler,
-    .hard_fault = blocking_handler,
-
-    .sv_call = null_handler,
-    .pend_sv = null_handler,
-    .systick = null_handler,
-    .irq = {
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-        null_handler,
-    }
 };

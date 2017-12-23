@@ -14,6 +14,6 @@ pill_blink $ find . -name '*.bin' -exec ls -l {} \;
 -rwxr-xr-x  1 admin  staff  3496 Dec 22 20:58 ./cubemx/build/pill_blink.bin
 -rwxr-xr-x  1 admin  staff  1088 Dec 22 22:43 ./opencm/pill_blink.bin
 -rwxr-xr-x  1 admin  staff   608 Dec 22 23:00 ./opencm-registers/pill_blink.bin
--rwxr-xr-x  1 admin  staff   460 Dec 22 23:55 ./bare-metal/pill_blink.bin
+-rwxr-xr-x  1 admin  staff   440 Dec 23 00:10 ./bare-metal/pill_blink.bin
 ```
 
