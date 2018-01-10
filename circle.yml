@@ -2,8 +2,17 @@ version: 1
 test:
     override:
         - PATH=/home/ubuntu/pill_blink/gcc-arm-none-eabi-7-2017-q4-major/bin/:${PATH} make -C bare-metal pill_blink.bin
-        - cp bare-metal/pill_blink.bin $CIRCLE_ARTIFACTS/
-        - cp bare-metal/pill_blink.elf $CIRCLE_ARTIFACTS/
+        - cp bare-metal/pill_blink.bin $CIRCLE_ARTIFACTS/pill_blink-bare-metal.bin
+        - cp bare-metal/pill_blink.elf $CIRCLE_ARTIFACTS/pill_blink-bare-metal.elf
+        - PATH=/home/ubuntu/pill_blink/gcc-arm-none-eabi-7-2017-q4-major/bin/:${PATH} make -C cubemx
+        - cp cubemx/build/pill_blink.bin $CIRCLE_ARTIFACTS/pill_blink-cubemx.bin
+        - cp cubemx/build/pill_blink.elf $CIRCLE_ARTIFACTS/pill_blink-cubemx.elf
+        - PATH=/home/ubuntu/pill_blink/gcc-arm-none-eabi-7-2017-q4-major/bin/:${PATH} make -C opencm pill_blink.bin
+        - cp opencm/pill_blink.bin $CIRCLE_ARTIFACTS/pill_blink-opencm.bin
+        - cp opencm/pill_blink.elf $CIRCLE_ARTIFACTS/pill_blink-opencm.elf
+        - PATH=/home/ubuntu/pill_blink/gcc-arm-none-eabi-7-2017-q4-major/bin/:${PATH} make -C opencm-registers pill_blink.bin
+        - cp opencm-registers/pill_blink.bin $CIRCLE_ARTIFACTS/pill_blink-opencm-registers.bin
+        - cp opencm-registers/pill_blink.elf $CIRCLE_ARTIFACTS/pill_blink-opencm-registers.elf
 dependencies:
     pre:
         - wget -O armgcc.tar.bz2 'https://developer.arm.com/-/media/Files/downloads/gnu-rm/7-2017q4/gcc-arm-none-eabi-7-2017-q4-major-linux.tar.bz2?revision=375265d4-e9b5-41c8-bf23-56cbe927e156?product=GNU%20Arm%20Embedded%20Toolchain,64-bit,,Linux,7-2017-q4-major'
