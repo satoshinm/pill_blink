@@ -1,7 +1,8 @@
 version: 1
 test:
     override:
-        - PATH=/home/ubuntu/pill_blink/gcc-arm-none-eabi-7-2017-q4-major/bin/:${PATH} (cd bare-metal && make)
+        - cd bare-metal
+        - PATH=/home/ubuntu/pill_blink/gcc-arm-none-eabi-7-2017-q4-major/bin/:${PATH} make
         - cp bare-metal/pill_blink.bin $CIRCLE_ARTIFACTS/
         - cp bare-metal/pill_blink.elf $CIRCLE_ARTIFACTS/
 dependencies:
