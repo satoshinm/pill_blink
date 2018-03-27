@@ -2,5 +2,5 @@
 	path = opencm/libopencm3
 	url = https://github.com/libopencm3/libopencm3
 [submodule "opencm-registers/libopencm3"]
-	path = opencm/libopencm3
+	path = opencm-registers/libopencm3
 	url = https://github.com/libopencm3/libopencm3
