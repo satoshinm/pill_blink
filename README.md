@@ -1,5 +1,7 @@
 # pill\_blink
 
+[![CircleCI](https://circleci.com/gh/satoshinm/pill_blink.svg?style=svg)](https://circleci.com/gh/satoshinm/pill_blink)
+
 Blink an STM32F103C8 "blue pill" development board (LED on PC13) using various methods:
 
 * [cubemx](./cubemx): using STMicroelectronics' [STM32CubeMX](http://www.st.com/content/st_com/en/products/ecosystems/stm32-open-development-environment.html) platform
